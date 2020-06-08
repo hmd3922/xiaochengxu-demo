@@ -1,0 +1,13 @@
+<!-- pages/me/index.wxml -->
+<view class="container">
+    <view class="userinfo">
+        <button wx:if="{{!hasUserInfo&&canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+            获取头像昵称
+        </button>
+        <block wx:else>
+            <image src="{{userInfo.avatarUrl}}" class="userinfo-avatar" />
+            <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+        </block>
+    </view>
+    <view class="" hover-class="none" hover-stop-propagation="false">{{num1+num2}}+{{num2}}</view>
+</view>
