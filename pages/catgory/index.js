@@ -92,5 +92,17 @@ Page({
         this.setData({
             curIndex: index
         })
+    },
+    showListView(e) {
+        let txt = e.currentTarget.dataset.txt;
+        // 调用导航跳转方法
+        wx.navigateTo({
+            url: '/pages/list/index?title=' + txt,
+            success: (result) => {
+
+            },
+            fail: () => { },
+            complete: () => { }
+        });
     }
 })

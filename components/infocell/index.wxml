@@ -1,0 +1,8 @@
+<!--components/infocell/index.wxml-->
+<!-- <text>components/infocell/index.wxml</text> -->
+
+<view class='payWrap' >
+    <text class='title'>{{title}}</text>
+    <text class='desc'>{{desc}}</text>
+    <text class='icon' bindtap='popView'>...</text>
+</view>
